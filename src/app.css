@@ -80,19 +80,24 @@ h1, h2, h3 {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color: #232323;
+    background: url('/images/footer.jpg') no-repeat center;
     color: white;
     width: 100%;
-    min-height: 8em;
+    max-height: 302px;
+    height: 25%;
+    background-size: cover;
+    text-shadow: 0 0 0.1em #000;
 }
 
 .footer span {
     margin: 0 auto;
-    vertical-align: middle;
-    align-items: center;
 }
 
 @media all and (min-width: 768px) {
+    .footer {
+        align-items: flex-end;
+    }
+
     .footer span {
         margin: 0 .5em;
     }
