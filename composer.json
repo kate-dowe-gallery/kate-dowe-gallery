@@ -1,0 +1,5 @@
+{
+    "require-dev": {
+        "matthiasmullie/minify": "^1.3"
+    }
+}
