@@ -11,29 +11,20 @@ h1, h2, h3 {
     margin: 0;
 }
 
+.anchor-link {
+    display: none;
+}
+
 .primary {
     height: 100%;
     background: url('/images/paint-background.jpg') no-repeat center;
     background-size: cover;
-
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.secondary {
-    background-color: lightgrey;
-    height: auto;
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    display: flex;
-    flex-direction: column;
-}
-
-.top-row {
+.primary h1 {
     text-align: center;
     font-size: 3.4em;
     color: #eee;
@@ -41,12 +32,21 @@ h1, h2, h3 {
     text-shadow: 0 0 0.1em #000;
 }
 
-.middle-row {
-    text-align: center;
-    margin: auto;
+.gallery {
+    display: flex;
+    flex-direction: column;
+    background-color: lightgrey;
+    padding: .5em;
 }
 
-.middle-row a {
+.gallery img {
+    margin: 0.5em auto;
+}
+
+
+.gallery-button {
+    text-align: center;
+    margin: auto;
     color: white;
     background-color: #4d77a6;
     border: 1px solid #4d77a6;
@@ -60,21 +60,13 @@ h1, h2, h3 {
     box-shadow: 0 0 0.1em #000;
 }
 
-.middle-row a:hover {
+.gallery-button:hover {
     color: #4d77a6;
     background-color: white;
     border-color: white;
 }
 
-.gallery-image {
-    margin: 0.5em auto;
-}
-
-.anchor-link {
-    display: none;
-}
-
-.footer {
+footer {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -89,16 +81,16 @@ h1, h2, h3 {
     text-shadow: 0 0 0.1em #000;
 }
 
-.footer span {
+footer span {
     margin: 0 auto;
 }
 
 @media all and (min-width: 768px) {
-    .footer {
+    footer {
         align-items: flex-end;
     }
 
-    .footer span {
+    footer span {
         margin: 0 .5em;
     }
 }

@@ -2,7 +2,7 @@ function galleryClick(event)
 {
     event.preventDefault();
 
-    document.querySelector('.secondary').scrollIntoView({
+    document.querySelector("#gallery").scrollIntoView({
         behavior: "smooth",
         block: "start",
         inline: "nearest"
