@@ -41,8 +41,8 @@ h1, h2, h3 {
 
 .gallery img {
     margin: 0.5em auto;
+    max-width: 100%;
 }
-
 
 .gallery-button {
     text-align: center;
