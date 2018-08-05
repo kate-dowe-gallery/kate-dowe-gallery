@@ -2,9 +2,9 @@ function galleryClick(event)
 {
     event.preventDefault();
 
-    window.scroll({
-        top: 2500,
-        left: 0,
-        behavior: 'smooth'
+    document.querySelector("#gallery").scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+        inline: "nearest"
     });
 }

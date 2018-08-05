@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Kate Dowe's personal website, showcasing her artoworks & paintings.">
+    <meta name="robots" content="noindex, nofollow">
     <title>Kate Dowe Gallery | Homepage</title>
 
     <link rel="stylesheet" type="text/css" href="/app.min.css">
@@ -11,21 +13,35 @@
 </head>
 <body>
 <div class="primary">
-    <h1 class="top-row">Kate Dowe Gallery</h1>
-    <div class="middle-row">
-        <a href="#gallery" onclick="galleryClick(event)">View Gallery</a>
-    </div>
+    <h1>Kate Dowe Gallery</h1>
+    <a class="gallery-button" href="#gallery" onclick="galleryClick(event)">View Gallery</a>
 </div>
-<div class="secondary">
-    <a id="gallery"></a>
-    <div class="top-row">
-        <img src="https://place-hold.it/150">
+<div class="gallery" id="gallery">
+    <h2>Landscapes</h2>
+    <div class="gallery-images">
+        <a href="/images/art/beach-full.jpg"><img src="/images/art/beach-small.jpg" alt="Beach" width="482" height="320"></a>
+        <a href="/images/art/cave-full.jpg"><img src="/images/art/cave-small.jpg" alt="Cave" width="445" height="328"></a>
+        <a href="/images/art/sea-full.jpg"><img src="/images/art/sea-small.jpg" alt="Sea" width="482" height="320"></a>
     </div>
-    <div class="middle-row">
-        <img src="https://place-hold.it/150">
-    </div>
-</div>
 
-<script src="/app.min.js"></script>
+    <h2>Farm Animals</h2>
+    <div class="gallery-images">
+        <a href="/images/art/cow-full.jpg"><img src="/images/art/cow-small.jpg" alt="Cow" width="348" height="338"></a>
+        <a href="/images/art/sheep-full.jpg"><img src="/images/art/sheep-small.jpg" alt="Sheep" width="482" height="320"></a>
+    </div>
+
+    <h2>Pets &amp; animals</h2>
+    <div class="gallery-images">
+        <a href="/images/art/dog-full.jpg"><img src="/images/art/dog-small.jpg" alt="Dog" width="482" height="320"></a>
+        <a href="/images/art/cat-full.jpg"><img src="/images/art/cat-small.jpg" alt="Cat" width="481" height="320"></a>
+        <a href="/images/art/lima-full.jpg"><img src="/images/art/lima-small.jpg" alt="Lima" width="481" height="320"></a>
+    </div>
+</div>
+<footer>
+    <span>Website design &copy; Harry Dowe</span>
+    <span>Artworks &amp; paintings &copy; Kate Dowe</span>
+</footer>
+
+<script async src="/app.min.js"></script>
 </body>
 </html>
