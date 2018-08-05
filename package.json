@@ -1,0 +1,27 @@
+{
+  "name": "kate-dowe-gallery",
+  "description": "A simple website showcasing Kate Dowe's paintings and artworks.",
+  "author": "Harry Dowe",
+  "version": "1.0.0",
+  "homepage": "https://katedowe.co.uk",
+  "main": "src/app.js",
+  "dependencies": {},
+  "devDependencies": {
+    "webpack": "^4.16.4",
+    "webpack-dev-server": "^3.1.5",
+    "path": "^0.12.7",
+    "webpack-cli": "^3.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kate-dowe-gallery/kate-dowe-gallery.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kate-dowe-gallery/kate-dowe-gallery/issues"
+  },
+  "scripts": {
+    "build": "webpack",
+    "serve": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+  }
+}
