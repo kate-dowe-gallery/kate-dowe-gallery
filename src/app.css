@@ -1,13 +1,18 @@
 * {
-    font-family: "Helvetica Neue", Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 }
 
 html, body {
     height: 100%;
+    width: 100%;
     padding: 0;
-    margin: 0;
     font-size: 16px;
     text-rendering: optimizeLegibility;
+}
+
+body {
+    position: relative;
+    z-index: -1;
 }
 
 h1, h2, h3 {
@@ -29,10 +34,9 @@ h1, h2, h3 {
     }
 }
 
-/*.primary-container {*/
 .primary:before {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.87) 0%, transparent 100%);
-    height: 75%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.65) 0%, transparent 100%);
+    height: 100%;
     z-index: -1;
     content: '';
     position: absolute;
@@ -47,8 +51,8 @@ h1, h2, h3 {
     top: 0;
     left: 0;
     width: 100%;
-    height: 75%;
-    z-index: -1;
+    height: 100%;
+    z-index: -2;
     animation-name: fade-in;
     animation-duration: .3s;
     animation-timing-function: ease-in-out;
@@ -63,26 +67,46 @@ h1, h2, h3 {
     height: 75%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    z-index: 1;
+    justify-content: space-around;
+    z-index: -2;
     opacity: 1;
+    text-align: center;
+    transform: translate3d(0, 0, 0);
+    position: relative;
 }
 
 .primary h1 {
-    font-family: Palanquin;
-    text-align: center;
     font-size: 3.4em;
     color: #eee;
-    margin: auto;
-    text-shadow: 0 0 0.1em #000;
+    text-shadow: 0 0 0.2em #000;
+}
+
+.gallery-button {
+    margin: 1em auto;
+    color: white;
+    background-color: #4d77a6;
+    border: 1px solid #4d77a6;
+    padding: .5em 1.5em;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.5s, background-color 0.5s, border 0.5s;
+    box-shadow: 0 0 0.1em #000;
+}
+
+.gallery-button:hover {
+    color: #4d77a6;
+    background-color: white;
+    border-color: white;
 }
 
 .gallery {
+    padding-top: 5em;
+    padding-bottom: 5em;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    padding: .5em;
 }
 
 .gallery-images {
@@ -105,25 +129,8 @@ h1, h2, h3 {
     max-height: 320px;
 }
 
-.gallery-button {
-    text-align: center;
-    margin: auto;
-    color: white;
-    background-color: #4d77a6;
-    border: 1px solid #4d77a6;
-    padding: .5em 1.5em;
-    border-radius: 3px;
-    text-decoration: none;
-    font-size: 1.2em;
-    transition: color 0.5s, background-color 0.5s, border 0.5s;
-    vertical-align: middle;
-    box-shadow: 0 0 0.1em #000;
-}
-
-.gallery-button:hover {
-    color: #4d77a6;
-    background-color: white;
-    border-color: white;
+.gallery h2 {
+    font-size: 2em;
 }
 
 footer {
