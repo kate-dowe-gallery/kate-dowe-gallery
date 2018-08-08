@@ -1,3 +1,20 @@
+@font-face {
+    font-family: "Font Awesome 5 Pro";
+    font-style: normal;
+    font-weight: 900;
+    src: url(../webfonts/fa-solid-900.eot);
+    src: url(../webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"), url(../webfonts/fa-solid-900.woff2) format("woff2"), url(../webfonts/fa-solid-900.woff) format("woff"), url(../webfonts/fa-solid-900.ttf) format("truetype"), url(../webfonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+.fa, .fas {
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900
+}
+
+.fa-paper-plane:before {
+    content: "\f1d8";
+}
+
 html, body {
     height: 100%;
     width: 100%;
@@ -96,7 +113,6 @@ h1, h2, h3 {
     flex-direction: column;
     align-items: center;
     background-color: white;
-    box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.05);
 }
 
 .gallery-images {
@@ -115,12 +131,32 @@ h1, h2, h3 {
 
 .gallery img {
     max-width: 100%;
-    width: auto;
     max-height: 320px;
+    object-fit: cover;
 }
 
 .gallery h2 {
     font-size: 2em;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: #4A5057;
+    box-shadow: 0 0.25rem 0.125rem 0 rgba(0, 0, 0, 0.05);
+}
+
+.contact h2 {
+    font-size: 1.5em;
+    color: white;
+    text-shadow: 0 0 0.1em #000;
+}
+
+.contact img {
+    height: 50px;
+    color: white;
 }
 
 footer {

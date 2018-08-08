@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 const path = require('path');
+var htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: './src/app.js',
@@ -11,5 +12,13 @@ module.exports = {
     },
     devServer: {
         contentBase: 'docs/'
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/,
+                use: ['style-loader', 'css-loader']
+            }
+        ]
     }
 };
