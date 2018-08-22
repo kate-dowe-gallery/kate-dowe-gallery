@@ -8,65 +8,74 @@
     <meta name="robots" content="noindex, nofollow">
     <title>Kate Dowe Gallery | Homepage</title>
 
-    <link rel="stylesheet" type="text/css" href="/app.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Palanquin" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.min.css">
 </head>
 <body>
-<div class="primary">
+
+<section class="primary">
     <h1>Kate Dowe Gallery</h1>
     <a class="gallery-button" href="#gallery" onclick="galleryClick(event)">View Gallery</a>
-</div>
-<div class="gallery" id="gallery">
+</section>
+
+<main class="gallery" id="gallery">
     <h2>Seascapes</h2>
     <div class="gallery-images">
-        <a href="/images/art/full/beach.jpg"><img src="/images/art/small/beach.jpg" alt="Beach"></a>
-        <a href="/images/art/full/cave.jpg"><img src="/images/art/small/cave.jpg" alt="Cave"></a>
-        <a href="/images/art/full/landscape-4.jpg"><img src="/images/art/small/landscape-4.jpg" alt="Landscape 4"></a>
-        <a href="/images/art/full/landscape-1.jpg"><img src="/images/art/small/landscape-1.jpg" alt="Landscape 1"></a>
-        <a href="/images/art/full/landscape-3.jpg"><img src="/images/art/small/landscape-3.jpg" alt="Landscape 3"></a>
+        <a class="gallery-images__landscape-4x3" href="/images/art/full/beach.jpg"><img src="/images/art/small/beach.jpg" alt="Beach"></a>
+        <a class="gallery-images__landscape-4x3" href="/images/art/full/cave.jpg"><img src="/images/art/small/cave.jpg" alt="Cave"></a>
+        <a class="gallery-images__landscape-4x3" href="/images/art/full/landscape-4.jpg"><img src="/images/art/small/landscape-4.jpg" alt="Landscape 4"></a>
+        <a class="gallery-images__landscape-4x3" href="/images/art/full/landscape-1.jpg"><img src="/images/art/small/landscape-1.jpg" alt="Landscape 1"></a>
+        <a class="gallery-images__landscape-4x3" href="/images/art/full/landscape-3.jpg"><img src="/images/art/small/landscape-3.jpg" alt="Landscape 3"></a>
     </div>
 
     <h2>Landscapes</h2>
     <div class="gallery-images">
-        <a href="/images/art/full/italy.jpg"><img src="/images/art/small/italy.jpg" alt="Italy"></a>
+        <a class="gallery-images__portrait-5x6" href="/images/art/full/italy.jpg"><img src="/images/art/small/italy.jpg" alt="Italy"></a>
     </div>
 
     <h2>Flora</h2>
     <div class="gallery-images">
-        <a href="/images/art/full/flower-1.jpg"><img src="/images/art/small/flower-1.jpg" alt="Flower 1"></a>
-        <a href="/images/art/full/flower-2.jpg"><img src="/images/art/small/flower-2.jpg" alt="Flower 2"></a>
-        <a href="/images/art/full/flower-3.jpg"><img src="/images/art/small/flower-3.jpg" alt="Flower 3"></a>
-        <a href="/images/art/full/flower-4.jpg"><img src="/images/art/small/flower-4.jpg" alt="Flower 4"></a>
-        <a href="/images/art/full/flower-5.jpg"><img src="/images/art/small/flower-5.jpg" alt="Flower 5"></a>
+        <div class="gallery-images__row">
+            <a class="gallery-images__portrait-5x7" href="/images/art/full/flower-1.jpg"><img src="/images/art/small/flower-1.jpg" alt="Flower 1"></a>
+            <a class="gallery-images__portrait-1x2" href="/images/art/full/flower-2.jpg"><img src="/images/art/small/flower-2.jpg" alt="Flower 2"></a>
+            <a class="gallery-images__square" href="/images/art/full/flower-4.jpg"><img src="/images/art/small/flower-4.jpg" alt="Flower 4"></a>
+        </div>
+        <div class="gallery-images__row">
+            <a class="gallery-images__landscape-11x5" href="/images/art/full/flower-5.jpg"><img src="/images/art/small/flower-5.jpg" alt="Flower 5"></a>
+        </div>
     </div>
 
     <h2>Farmyard Animals</h2>
     <div class="gallery-images">
-        <a href="/images/art/full/cow.jpg"><img src="/images/art/small/cow.jpg" alt="Cow"></a>
-        <a href="/images/art/full/cow-2.jpg"><img src="/images/art/small/cow-2.jpg" alt="Cow"></a>
-        <a href="/images/art/full/sheep.jpg"><img src="/images/art/small/sheep.jpg" alt="Sheep"></a>
+        <a class="gallery-images__square" href="/images/art/full/cow.jpg"><img src="/images/art/small/cow.jpg" alt="Cow"></a>
+        <a class="gallery-images__landscape-4x3" href="/images/art/full/cow-2.jpg"><img src="/images/art/small/cow-2.jpg" alt="Cow"></a>
+        <a class="gallery-images__landscape-4x3" href="/images/art/full/sheep.jpg"><img src="/images/art/small/sheep.jpg" alt="Sheep"></a>
     </div>
 
     <h2>Pet Portraits</h2>
     <div class="gallery-images">
-        <a href="/images/art/full/dog.jpg"><img src="/images/art/small/dog.jpg" alt="Dog"></a>
-        <a href="/images/art/full/cat.jpg"><img src="/images/art/small/cat.jpg" alt="Cat"></a>
-        <a href="/images/art/full/dog.jpg"><img src="/images/art/small/dog-toby.jpg" alt="Toby the dog"></a>
-        <a href="/images/art/full/dog-bailey.jpg"><img src="/images/art/small/dog-bailey.jpg" alt="Bailey the dog"></a>
+        <a class="gallery-images__square" href="/images/art/full/dog.jpg"><img src="/images/art/small/dog.jpg" alt="Dog"></a>
+        <a class="gallery-images__landscape-3x4" href="/images/art/full/cat.jpg"><img src="/images/art/small/cat.jpg" alt="Cat"></a>
+        <a class="gallery-images__portrait-3x4" href="/images/art/full/dog-toby.jpg"><img src="/images/art/small/dog-toby.jpg" alt="Toby the dog"></a>
+        <a class="gallery-images__portrait-5x4" href="/images/art/full/dog-bailey.jpg"><img src="/images/art/small/dog-bailey.jpg" alt="Bailey the dog"></a>
     </div>
 
     <h2>Birds &amp; Animals</h2>
     <div class="gallery-images">
-        <a href="/images/art/full/bird-1.jpg"><img src="/images/art/small/bird-1.jpg" alt="Bird 1"></a>
-        <a href="/images/art/full/bird-2.jpg"><img src="/images/art/small/bird-2.jpg" alt="Bird 2"></a>
-        <a href="/images/art/full/lima.jpg"><img src="/images/art/small/lima.jpg" alt="Lima"></a>
+        <a class="gallery-images__portrait-3x4" href="/images/art/full/bird-1.jpg"><img src="/images/art/small/bird-1.jpg" alt="Bird 1"></a>
+        <a class="gallery-images__square" href="/images/art/full/bird-2.jpg"><img src="/images/art/small/bird-2.jpg" alt="Bird 2"></a>
+        <a class="gallery-images__landscape-3x4" href="/images/art/full/lima.jpg"><img src="/images/art/small/lima.jpg" alt="Lima"></a>
     </div>
-</div>
+</main>
+<section class="contact">
+    <h2>Like what you see?</h2>
+    <a class="gallery-button" href="mailto:contact@example.com">Get in touch! <i class="fa fa-paper-plane"></i></a>
+</section>
 <footer>
     <span>Website design &copy; Harry Dowe</span>
     <span>Artworks &amp; paintings &copy; Kate Dowe</span>
 </footer>
 
-<script async src="/app.min.js"></script>
+<script async src="/js/app.min.js"></script>
 </body>
 </html>
