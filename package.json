@@ -7,13 +7,13 @@
   "main": "src/app.js",
   "dependencies": {},
   "devDependencies": {
-    "@fortawesome/fontawesome-pro": "^5.2.0",
-    "css-loader": "^1.0.0",
+    "@fortawesome/fontawesome-pro": "^5.8.1",
+    "css-loader": "^1.0.1",
     "path": "^0.12.7",
     "style-loader": "^0.22.1",
-    "webpack": "^4.16.4",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "webpack": "^4.30.0",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.3.1"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,6 @@
   },
   "scripts": {
     "build": "webpack",
-    "serve": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
+    "serv": "node_modules/.bin/webpack-dev-server"
   }
 }
