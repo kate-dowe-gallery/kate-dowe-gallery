@@ -25,6 +25,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "serv": "node_modules/.bin/webpack-dev-server"
+    "serv": "node_modules/.bin/webpack-dev-server",
+    "exif": "exiftool -all= docs/images/art/full/*.jpg docs/images/art/small/*.jpg -overwrite_original"
   }
 }
