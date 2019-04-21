@@ -4,7 +4,5 @@ const mix = require('laravel-mix');
 Mix.manifest.refresh = _ => void 0;
 
 mix.sass('src/app.scss', 'docs/assets')
-    // .setResourceRoot('docs/assets')
     .setPublicPath('docs/assets')
-    .js('src/app.js', 'docs/assets')
-    .sourceMaps();
+    .js('src/app.js', 'docs/assets');
