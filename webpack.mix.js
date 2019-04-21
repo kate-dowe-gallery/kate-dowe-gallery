@@ -1,5 +1,10 @@
 const mix = require('laravel-mix');
 
-mix.sass('src/app.scss', 'docs/css')
-    .js('src/app.js', 'docs/js')
+// Disables the mix-manifest.json file
+Mix.manifest.refresh = _ => void 0;
+
+mix.sass('src/app.scss', 'docs/assets')
+    // .setResourceRoot('docs/assets')
+    .setPublicPath('docs/assets')
+    .js('src/app.js', 'docs/assets')
     .sourceMaps();
