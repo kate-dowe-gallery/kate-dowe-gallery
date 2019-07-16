@@ -1,6 +1,0 @@
-{
-    "require-dev": {
-        "php": ">=5.6",
-        "matthiasmullie/minify": "^1.3"
-    }
-}
