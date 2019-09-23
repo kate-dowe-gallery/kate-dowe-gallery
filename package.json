@@ -33,7 +33,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "serv": "node_modules/.bin/webpack-dev-server",
+    "serv": "node_modules/.bin/webpack-dev-server --config=node_modules/laravel-mix/setup/webpack.config.js",
     "exif": "exiftool -all= docs/images/art/full/*.jpg docs/images/art/small/*.jpg -overwrite_original",
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
